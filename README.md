@@ -15,6 +15,30 @@ In our experiments we have used three model architechtures for feature extractio
 - ResNet 18
 - ResNet 50
 
+### Data Preparation
+
+Datasets – CIFAR100, Mammal ImageNet, Tiered ImageNet, iNaturalist’19 and ImageNet
+CIFAR100 – pytorch has this dataset. Torchvision -> datasets->CIFAR100.
+Mammal ImageNet – Download the dataset: https://lyy.mpi-inf.mpg.de/mtl/download/Lmzjm9tX.html
+Tiered ImageNet – Download the dataset: https://lyy.mpi-inf.mpg.de/mtl/download/Lmzjm9tX.html
+iNaturalist’19 – Download the dataset:  https://www.kaggle.com/competitions/inaturalist-2019-fgvc6/data
+ImageNet – https://towardsdatascience.com/downloading-and-using-the-imagenet-dataset-with-pytorch-f0908437c4be
+
+### Requirements
+
+pip3 install torch torchvision 
+pip3 install torch_optimizer torchmetrics
+Pip install nvidia
+sudo apt-get -y install python3-nltk
+pip install conditional
+sudo apt-get -y install libjs-json
+pip install tensorboardX
+
+### How to Run the code
+
+Python3 <filename.py>
+Make sure you change the data paths in the code file accordingly. 
+
 ### Observation
 The reliable substitutes for tree distance loss, such as OvA cascade and BEP cascade,  outperform flat classification algorithms that ignore hierarchy.
 
